@@ -1,0 +1,1062 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Material Design theme for MkDocs">
+      
+      
+        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/">
+      
+      
+        <meta name="author" content="Martin Donath">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Material for MkDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#k-nearest-neighbors-k-nn-algoritma" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Material for MkDocs
+            </span>
+            <span class="md-header-nav__topic">
+              Material
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/squidfunk/mkdocs-material" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="." title="Material" class="md-tabs__link md-tabs__link--active">
+        Material
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="extensions/admonition/" title="Extensions" class="md-tabs__link">
+          Extensions
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Material for MkDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/squidfunk/mkdocs-material" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Material
+      </label>
+    
+    <a href="." title="Material" class="md-nav__link md-nav__link--active">
+      Material
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-pengertian-k-nn" title="A. Pengertian k-NN" class="md-nav__link">
+    A. Pengertian k-NN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-kelebihan-dan-kekurangan-k-nn" title="B. Kelebihan dan kekurangan K-NN" class="md-nav__link">
+    B. Kelebihan dan kekurangan K-NN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-langkah-kerja-k-nn" title="C. Langkah kerja K-NN" class="md-nav__link">
+    C. Langkah kerja K-NN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d-metode-untuk-mengitung-jarak" title="D. Metode untuk mengitung Jarak" class="md-nav__link">
+    D. Metode untuk mengitung Jarak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi-algoritma-k-nn" title="Implementasi algoritma K-NN" class="md-nav__link">
+    Implementasi algoritma K-NN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kesimpulan" title="Kesimpulan" class="md-nav__link">
+    Kesimpulan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sumber-dan-referensi" title="Sumber dan referensi :" class="md-nav__link">
+    Sumber dan referensi :
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Extensions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Extensions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="extensions/admonition/" title="Admonition" class="md-nav__link">
+      Admonition
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="extensions/codehilite/" title="CodeHilite" class="md-nav__link">
+      CodeHilite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="extensions/footnotes/" title="Footnotes" class="md-nav__link">
+      Footnotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="extensions/metadata/" title="Metadata" class="md-nav__link">
+      Metadata
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="extensions/permalinks/" title="Permalinks" class="md-nav__link">
+      Permalinks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="extensions/pymdown/" title="PyMdown" class="md-nav__link">
+      PyMdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="specimen/" title="Specimen" class="md-nav__link">
+      Specimen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="customization/" title="Customization" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="compliance/" title="Compliance with GDPR" class="md-nav__link">
+      Compliance with GDPR
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="release-notes/" title="Release notes" class="md-nav__link">
+      Release notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="authors-notes/" title="Author's notes" class="md-nav__link">
+      Author's notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-pengertian-k-nn" title="A. Pengertian k-NN" class="md-nav__link">
+    A. Pengertian k-NN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-kelebihan-dan-kekurangan-k-nn" title="B. Kelebihan dan kekurangan K-NN" class="md-nav__link">
+    B. Kelebihan dan kekurangan K-NN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-langkah-kerja-k-nn" title="C. Langkah kerja K-NN" class="md-nav__link">
+    C. Langkah kerja K-NN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d-metode-untuk-mengitung-jarak" title="D. Metode untuk mengitung Jarak" class="md-nav__link">
+    D. Metode untuk mengitung Jarak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi-algoritma-k-nn" title="Implementasi algoritma K-NN" class="md-nav__link">
+    Implementasi algoritma K-NN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kesimpulan" title="Kesimpulan" class="md-nav__link">
+    Kesimpulan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sumber-dan-referensi" title="Sumber dan referensi :" class="md-nav__link">
+    Sumber dan referensi :
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="k-nearest-neighbors-k-nn-algoritma">k-Nearest Neighbors (k-NN) Algoritma<a class="headerlink" href="#k-nearest-neighbors-k-nn-algoritma" title="Permanent link">&para;</a></h1>
+<h3 id="a-pengertian-k-nn">A. Pengertian k-NN<a class="headerlink" href="#a-pengertian-k-nn" title="Permanent link">&para;</a></h3>
+<p>​   K-nearest neighbors atau knn adalah algoritma yang berfungsi untuk melakukan klasifikasi suatu data berdasarkan data pembelajaran (<em>train data sets</em>), yang diambil dari k tetangga terdekatnya (<em>nearest neighbors</em>) yang sudah terklasikasi sebelumnya. Dengan k merupakan banyaknya tetangga terdekat. k-NN termasuk dalam <strong><em>Supervised Learning</em></strong>, dimana hasil query instance yang baru diklasifiksikan berdasarkan mayoritas kedekatan jarak dari kategori yang ada dalam k-NN.</p>
+<p>​   KNN telah digunakan dalam estimasi statistik dan pengenalan pola di awal tahun 1970-an sebagai teknik non-parametrik, yang berarti tidak membuat asumsi pada distribusi data. Tujuan dari algoritma knn adalah untuk mengklasifikasikan objek baru berdasarkan atribut dan data <em>sample</em> dari <em>data</em> training. Algoritma <em>k-NN</em> menggunakan <em>Neighborhood Classification</em> sebagai nilai prediksi dari nilai <em>instance</em> yang baru.</p>
+<p>​   Untuk lebih memahami seperti apa k-NN itu mari simak ilustrasi cerita dari k-NN sebagai berikut yang dikutip dari  <a href="https://informatikalogi.com/algoritma-k-nn-k-nearest-neighbor/">https://informatikalogi.com/algoritma-k-nn-k-nearest-neighbor/</a> :</p>
+<blockquote>
+<p><strong>Bertanya pada Tetangga</strong> – <em>Anda diundang  ke sebuah pertemuan. Namun, Anda tidak tahu tema dari pertemuan  tersebut, maupun kegiatan apa saja yang akan dilakukan di pertemuan  tersebut. Anda benar-benar tidak tahu apakah pertemuan itu akan  bermanfaat atau tidak untuk Anda. Yang Anda tahu, beberapa orang teman  Anda juga diundang ke acara yang sama. Dalam kondisi seperti itu, apa  yang Anda lakukan?</em></p>
+<p>**Cara yang biasanya dilakukan oleh  banyak orang dalam menangani masalah seperti itu adalah dengan bertanya  kepada teman-teman apakah mereka akan datang ke pertemuan tersebut atau  tidak. Biasanya, orang-orang yang pertama ditanya adalah orang-orang  yang dekat dengan Anda. Maka, Anda mencoba mengontak enam orang teman  yang biasa jadi teman main Anda. Dari enam orang tersebut, empat orang  menyatakan akan datang, tapi dua orang ternyata memutuskan tidak datang,  entah mengapa alasannya. Keputusan apa yang Anda akan ambil?*</p>
+</blockquote>
+<p>​   Kasus di atas menggambarkan ide dari algoritma k-Nearest Neighbours (kNN). Anda ingin mengambil sebuah keputusan (kelas) antara datang atau tidak datang ke sebuah pertemuan. Untuk mendukung pengambilan keputusan tersebut, Anda melihat mayoritas dari keputusan teman-teman Anda (instance lainnya). Teman-teman tersebut Anda pilih berdasarkan kedekatannya dengan Anda. Ukuran kedekatan pertemanan ini bisa bermacam-macam: tetangga, satu hobi, satu kelas, atau hal-hal lainnya. 
+Ukuran-ukuran tersebut bisa juga digunakan bersamaan, misalnya si A itu tetangga, satu hobi, dan satu kelas; sedangkan si B hanya satu kelas saja.*</p>
+<p><img alt="" src="assets/images/3.jpg" /></p>
+<p>​   <em>Gambar di atas menggambarkan ide dari algoritma <strong>k-Nearest Neighbours (k-NN)</strong>. Anda ingin mengambil sebuah keputusan (kelas) antara datang atau tidak datang ke sebuah pertemuan. Untuk mendukung pengambilan keputusan tersebut, Anda melihat mayoritas dari keputusan teman atau tetangga Anda (instance lainnya). Teman atau tetangga tersebut Anda pilih berdasarkankedekatannya dengan Anda. Ukuran kedekatan pertemanan ini bisa bermacam-macam: satu hobi, satu kelas, atau hal-hal lainnya. Ukuran-ukuran tersebut bisa juga digunakan bersamaan, misalnya si A itu tetangga, satu hobi, dan satu kelas; sedangkan si B hanya satu kelas saja.</em></p>
+<p>Dikutip dari <a href="https://informatikalogi.com/algoritma-k-nn-k-nearest-neighbor/">https://informatikalogi.com/algoritma-k-nn-k-nearest-neighbor/</a></p>
+<p><u>Contoh lainnya :</u></p>
+<p><img alt="" src="assets/images/1.png" /></p>
+<p><em>jika nilai k = 3 maka, ditetapkan menjadi kelas B.</em></p>
+<p><em>jika nilai k = 6 maka, ditetapkan menjadi kelas A.</em></p>
+<p><strong>k-NN dapat diringkas sebagai berikut  :</strong></p>
+<ol>
+<li>Menghitung jarak antara titik data baru dengan setiap contoh pelatihan (data training).</li>
+</ol>
+<p><img alt="" src="assets/images/b1.png" /></p>
+<ol>
+<li>Untuk menghitung ukuran jarak seperti jarak Euclidean, jarak Hamming atau jarak Manhattan akan digunakan.</li>
+</ol>
+<p><img alt="" src="assets/images/ed.png" /></p>
+<ol>
+<li>Model memilih entri k dalam database yang paling dekat dengan titik data baru. Poin data k terdekat dipilih (berdasarkan jarak). Dalam contoh ini, poin 1, 5, 6 akan dipilih jika nilai k adalah 3. Selanjutnya akan mengeksplorasi metode untuk memilih nilai k yang tepat.</li>
+</ol>
+<p><img alt="" src="assets/images/b2.png" /></p>
+<ol>
+<li>Kemudian melakukan voting mayoritas yaitu kelas / label paling umum di antara entri k tersebut adalah kelas dari titik data baru.</li>
+</ol>
+<p>Banyaknya k yang bisa digunakan adalah mulai dari 1 sampai dengan n-1</p>
+<p><strong>Bagaimana menentukan faktor k ?</strong></p>
+<p>Langkah selanjutnya adalah memilih nilai k. Langkah ini menentukan jumlah tetangga yang kita lihat ketika kita memberikan nilai pada pengamatan baru.</p>
+<p>Sebagai contoh , untuk nilai k = 3, titik terdekat adalah ID1, ID5 dan ID6.</p>
+<p><img alt="" src="assets/images/b2.png" /></p>
+<p><img alt="" src="assets/images/t1.png" /></p>
+<p>Prediksi untuk ID11 akan seperti ini :</p>
+<pre class="codehilite"><code>ID 11 =  (77+59+72+60+58)/5 
+
+ID 11 = 65.2 kg</code></pre>
+
+<p>​   Maka berdasarkan nilai k, hasil akhirnya cenderung berubah. Lalu bagaimana kita mengetahui nilai k yang optimal? Mari kita putuskan berdasarkan perhitungan kesalahan untuk set training dan set validasi kita Lihatlah grafik di bawah ini untuk kesalahan data training dan kesalahan data validasi untuk nilai k yang berbeda.</p>
+<p><img alt="" src="assets/images/g1.webp" /></p>
+<p><img alt="" src="assets/images/g2.webp" /></p>
+<p>​       Untuk nilai k yang sangat rendah (misalkan k = 1), model ini cocok dengan data pelatihan, yang mengarah ke tingkat kesalahan yang tinggi pada set validasi. Di sisi lain, untuk nilai k yang tinggi, model ini bekerja dengan buruk pada set training dan set validasi. Jika Anda mengamati dengan seksama, kurva kesalahan validasi mencapai minima pada nilai k = 9. Nilai k ini adalah nilai optimal dari model (akan bervariasi untuk dataset yang berbeda). Kurva ini dikenal sebagai ‘kurva siku‘ (karena memiliki bentuk seperti siku) dan biasanya digunakan untuk menentukan nilai k.</p>
+<h3 id="b-kelebihan-dan-kekurangan-k-nn">B. Kelebihan dan kekurangan K-NN<a class="headerlink" href="#b-kelebihan-dan-kekurangan-k-nn" title="Permanent link">&para;</a></h3>
+<p><strong>- Kelebihan</strong></p>
+<ol>
+<li>Implementasinya sederhana.</li>
+<li>Lebih efektif untuk data training yang besar.</li>
+<li>Dapat menghasilkan data yang lebih akurat.</li>
+</ol>
+<p><strong>- Kekurangan</strong></p>
+<ol>
+<li>
+<p>Perlu ditentukannya nilai k yang paling optimal yang menyatakan jumlah tetangga terdekat.</p>
+</li>
+<li>
+<p>Biaya komputasi cukup tinggi karena perhitungan jarak harus dilakukan pada setiap query instance bersama-sama dengan seluruh instance dari training sample/data training.</p>
+</li>
+</ol>
+<h3 id="c-langkah-kerja-k-nn">C. Langkah kerja K-NN<a class="headerlink" href="#c-langkah-kerja-k-nn" title="Permanent link">&para;</a></h3>
+<p>​   Algoritma metode KNN sangatlah sederhana, bekerja berdasarkan jarak terpendek dari query instance ke training sample untuk menentukan KNN-nya. Training sample diproyeksikan ke ruang berdimensi banyak, dimana masing-masing dimensi merepresentasikan fitur dari data. Ruang ini dibagi menjadi bagian-bagian berdasarkan klasifikasi training sample.</p>
+<p>Secara ringkas tahapan langkah kerja menggunakan algoritma knn, sebagai berikut :</p>
+<ol>
+<li>Tentukan parameter k (banyaknya tetangga terdekat/paling dekat).</li>
+<li>Hitung jarak Euclidean objek terhadap data training yang ada.</li>
+<li>Urutkan hasil dari tahap no 2 (jarak euclidean) dari nilai tertinggi ke terendah (ascending).</li>
+<li>Kumpulkan kategori Y (klasifikasi tetangga terdekat/<em>nearest neighbor</em> bedasarkan nilai k).</li>
+<li>Dengan menggunakan kategori nearest neighbor yang paling mayoritas maka dapat dipredisikan kategori objek.</li>
+</ol>
+<h3 id="d-metode-untuk-mengitung-jarak">D. Metode untuk mengitung Jarak<a class="headerlink" href="#d-metode-untuk-mengitung-jarak" title="Permanent link">&para;</a></h3>
+<p>​   Ada beberapa metode yang digunakan untuk menghitung jarak titik baru dengan titik training dalam algoritma KNN, metode -metode yang umum digunakan adalah <em>Euclidean Distance</em>, <em>Manhattan</em> (untuk waktu yang continu), dan <em>Hamming Distance</em> (untuk kategorikal).</p>
+<p><strong>1. Euclidean distance :</strong> Jarak Euclidean dihitung sebagai akar kuadrat dari jumlah perbedaan/selisih kuadrat antara titik baru (x) dan titik yang ada/training (y).</p>
+<p><strong>2. Manhattan :</strong> Jarak antara vektor nyata menggunakan penjumlahan dari perbedaan absolutnya.</p>
+<p><img alt="" src="assets/images/3.png" /></p>
+<p><strong>3. Hamming distance :</strong> digunakan untuk variabel kategorial. Jika nilai (x) dan nilai (y) sama, jarak D akan sama dengan 0. Kalau tidak, D = 1.</p>
+<p><img alt="" src="assets/images/4.png" /></p>
+<h2 id="implementasi-algoritma-k-nn">Implementasi algoritma K-NN<a class="headerlink" href="#implementasi-algoritma-k-nn" title="Permanent link">&para;</a></h2>
+<p>​   Dataset yang akan digunakan untuk mengilunstrasikan algoritma KNN  adalah dataset Iris.  Ada beberapa tahapan yang harus dilalui sebagai berikut :</p>
+<p><strong>1. Menyiapkan dan mengimpor data</strong></p>
+<ul>
+<li>1.1 Mengimpor <em>libraries</em></li>
+</ul>
+<pre class="codehilite"><code class="language-python">import numpy as np
+import pandas as pd</code></pre>
+
+<ul>
+<li>1.2 Memuat dataset</li>
+</ul>
+<p><em>CATATAN: Kumpulan data iris mencakup tiga spesies bunga iris dengan masing-masing 50 sampel serta beberapa sifat tentang setiap bunga. Satu spesies bunga terpisah secara linear dari dua lainnya, tetapi dua lainnya tidak terpisah secara linear satu sama lain</em></p>
+<pre class="codehilite"><code class="language-python"># mengimpor dataset
+dataset = pd.read_csv('../input/Iris.csv')</code></pre>
+
+<ul>
+<li>1.3 Meringkas Datase</li>
+</ul>
+<pre class="codehilite"><code class="language-python"># Kita bisa mendapatkan tentang berapa banyak instance (baris) dan berapa banyak atribut (kolom) yang berisi data
+
+dataset.shape</code></pre>
+
+<pre class="codehilite"><code class="language-python">dataset.head(5)</code></pre>
+
+<pre class="codehilite"><code class="language-python">dataset.describe()</code></pre>
+
+<pre class="codehilite"><code class="language-python"># Sekarang mari kita lihat jumlah instance (baris) yang dimiliki masing-masing kelas. Kita dapat melihat ini sebagai jumlah absolut.
+
+dataset.groupby('Species').size()typ</code></pre>
+
+<ul>
+<li>1.4 Membagi data menjadi fitur dan label</li>
+</ul>
+<p><em>CATATAN: Seperti yang dapat kita lihat, dataset berisi enam kolom: Id, SepalLengthCm, SepalWidthCm, PetalLengthCm, PetalWidthCm dan Spesies. Fitur aktual dijelaskan oleh kolom 1 - 4. Kolom terakhir berisi label sampel / class. Pertama kita perlu membagi data menjadi dua array: X (fitur) dan y (label).</em></p>
+<pre class="codehilite"><code class="language-python">feature_columns = ['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm','PetalWidthCm']
+X = dataset[feature_columns].values
+y = dataset['Species'].values
+
+# Cara alternatif memilih fitur dan label array:
+# X = dataset.iloc [:, 1: 5] .values
+# y = dataset.iloc [:, 5] .values</code></pre>
+
+<ul>
+<li>1.5 Pengkodean label</li>
+</ul>
+<p><em>CATATAN: Seperti yang dapat kita lihat label adalah kategori/kelas. K-NeighborsClassifier tidak menerima label string. Kita perlu menggunakan LabelEncoder untuk mengubahnya menjadi angka. Iris-setosa sesuai dengan 0, Iris-versicolor sesuai dengan 1 dan Iris-virginica sesuai dengan 2.</em></p>
+<pre class="codehilite"><code class="language-python">from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+y = le.fit_transform(y)</code></pre>
+
+<ul>
+<li>1.6 Memisahkan dataset ke dalam set pelatihan dan set tes</li>
+</ul>
+<p>Pisahkan dataset menjadi set pelatihan (data training) dan set tes (data testing), ini ditujukan untuk memeriksa nanti apakah classifier berfungsi dengan benar.</p>
+<pre class="codehilite"><code class="language-python">from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)</code></pre>
+
+<p><strong>2. Visualisasi data</strong></p>
+<p><code>python
+import matplotlib.pyplot as plt
+  import seaborn as sns</code></p>
+<ul>
+<li>2.1  Parallel Coordinates  (Koordinat Paralel)</li>
+</ul>
+<p>Koordinat paralel adalah teknik mem-plot untuk mem-plot data multivarian. tTeknik ini memungkinkan seseorang untuk melihat cluster dalam data dan untuk memperkirakan statistik lainnya secara visual. Menggunakan titik koordinat paralel direpresentasikan sebagai segmen garis yang terhubung. Setiap garis vertikal mewakili satu atribut. Satu set segmen garis yang terhubung mewakili satu titik data. Poin yang cenderung mengelompok akan tampak lebih berdekatan.</p>
+<pre class="codehilite"><code class="language-python">from pandas.plotting import parallel_coordinates
+plt.figure(figsize=(15,10))
+parallel_coordinates(dataset.drop("Id", axis=1), "Species")
+plt.title('Parallel Coordinates Plot', fontsize=20, fontweight='bold')
+plt.xlabel('Features', fontsize=15)
+plt.ylabel('Features values', fontsize=15)
+plt.legend(loc=1, prop={'size': 15}, frameon=True,shadow=True, facecolor="white", edgecolor="black")
+plt.show()</code></pre>
+
+<p><img alt="" src="assets/images/v1.png" /></p>
+<ul>
+<li>2.2  Andrews Curves  (Kurva Andrews)</li>
+</ul>
+<p>Kurva Andrews memungkinkan seseorang untuk mem-plot data multivariat sebagai sejumlah besar kurva yang dibuat menggunakan atribut sampel sebagai koefisien untuk deret Fourier. Dengan mewarnai kurva ini secara berbeda untuk setiap kelas dimungkinkan untuk memvisualisasikan pengelompokan data. Kurva milik sampel dari kelas yang sama biasanya akan lebih dekat bersama dan membentuk struktur yang lebih besar.</p>
+<pre class="codehilite"><code class="language-python">from pandas.plotting import andrews_curves
+plt.figure(figsize=(15,10))
+andrews_curves(dataset.drop("Id", axis=1), "Species")
+plt.title('Andrews Curves Plot', fontsize=20, fontweight='bold')
+plt.legend(loc=1, prop={'size': 15}, frameon=True,shadow=True, facecolor="white", edgecolor="black")
+plt.show()</code></pre>
+
+<p><img alt="" src="assets/images/v2.png" /></p>
+<ul>
+<li>2.3  Pairplot</li>
+</ul>
+<p>Paiplot berguna ketika kita ingin memvisualisasikan distribusi variabel atau hubungan antara beberapa variabel secara terpisah dalam himpunan bagian dari dataset.</p>
+<pre class="codehilite"><code class="language-python">plt.figure()
+sns.pairplot(dataset.drop("Id", axis=1), hue = "Species", height=3, markers=["o", "s", "D"])
+plt.show()</code></pre>
+
+<p><img alt="" src="assets/images/v3.png" /></p>
+<ul>
+<li>2.4  Boxplots</li>
+</ul>
+<pre class="codehilite"><code class="language-python">plt.figure()
+dataset.drop("Id", axis=1).boxplot(by="Species", figsize=(15, 10))
+plt.show()</code></pre>
+
+<p><img alt="" src="assets/images/v4.png" /></p>
+<ul>
+<li>2.5   3D visualization  (Visualisasi 3D)</li>
+</ul>
+<p>Kita juga dapat mencoba memvisualisasikan kumpulan data dimensi tinggi dalam 3D menggunakan warna, bentuk, ukuran, dan properti lainnya dari objek 3D dan 2D. Dalam plot ini untuk ukuran tanda untuk memvisualisasikan dimensi keempat yaitu, Lebar Petal [cm].</p>
+<pre class="codehilite"><code class="language-python">from mpl_toolkits.mplot3d import Axes3D
+fig = plt.figure(1, figsize=(20, 15))
+ax = Axes3D(fig, elev=48, azim=134)
+ax.scatter(X[:, 0], X[:, 1], X[:, 2], c=y,
+           cmap=plt.cm.Set1, edgecolor='k', s = X[:, 3]*50)
+
+for name, label in [('Virginica', 0), ('Setosa', 1), ('Versicolour', 2)]:
+    ax.text3D(X[y == label, 0].mean(),
+              X[y == label, 1].mean(),
+              X[y == label, 2].mean(), name,
+              horizontalalignment='center',
+              bbox=dict(alpha=.5, edgecolor='w', facecolor='w'),size=25)
+
+ax.set_title("3D visualization", fontsize=40)
+ax.set_xlabel("Sepal Length [cm]", fontsize=25)
+ax.w_xaxis.set_ticklabels([])
+ax.set_ylabel("Sepal Width [cm]", fontsize=25)
+ax.w_yaxis.set_ticklabels([])
+ax.set_zlabel("Petal Length [cm]", fontsize=25)
+ax.w_zaxis.set_ticklabels([])
+
+plt.show()</code></pre>
+
+<p><img alt="" src="assets/images/v5.png" /></p>
+<p><strong>3. Menggunakan algoritma klasifikasi KNN</strong></p>
+<ul>
+<li>3.1  Membuat prediksi</li>
+</ul>
+<pre class="codehilite"><code class="language-python"># menyesuaikan clasifier ke dalam Training set
+# memuat libraries
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import confusion_matrix, accuracy_score
+from sklearn.model_selection import cross_val_score
+
+# menentukan model (k = 3)
+classifier = KNeighborsClassifier(n_neighbors=3)
+
+# menyesuaikan model
+classifier.fit(X_train, y_train)
+
+# memprediksi hasil kumpulan tes 
+y_pred = classifier.predict(X_test)</code></pre>
+
+<ul>
+<li>3.2  Mengevaluasi prediksi</li>
+</ul>
+<pre class="codehilite"><code class="language-python">cm = confusion_matrix(y_test, y_pred)
+cm</code></pre>
+
+<p>menghitung akuransi dari model :</p>
+<pre class="codehilite"><code class="language-python">accuracy = accuracy_score(y_test, y_pred)*100
+print('Accuracy of our model is equal ' + str(round(accuracy, 2)) + ' %.')</code></pre>
+
+<ul>
+<li>3.3  Menggunakan cross-validation untuk penyetelan parameter:</li>
+</ul>
+<pre class="codehilite"><code class="language-python"># membuat daftar dari K untuk KNN
+k_list = list(range(1,50,2))
+# membuat daftar dari cv scores
+cv_scores = []
+
+# melakukan validasi silang 10 kali lipat
+for k in k_list:
+    knn = KNeighborsClassifier(n_neighbors=k)
+    scores = cross_val_score(knn, X_train, y_train, cv=10, scoring='accuracy')
+    cv_scores.append(scores.mean())</code></pre>
+
+<pre class="codehilite"><code class="language-python">MSE = [1 - x for x in cv_scores]
+
+plt.figure()
+plt.figure(figsize=(15,10))
+plt.title('The optimal number of neighbors', fontsize=20, fontweight='bold')
+plt.xlabel('Number of Neighbors K', fontsize=15)
+plt.ylabel('Misclassification Error', fontsize=15)
+sns.set_style("whitegrid")
+plt.plot(k_list, MSE)
+
+plt.show()</code></pre>
+
+<p><img alt="" src="assets/images/v6.png" /></p>
+<p>​           </p>
+<pre class="codehilite"><code class="language-python"># menemukan k paling optimal
+best_k = k_list[MSE.index(min(MSE))]
+print("The optimal number of neighbors is %d." % best_k)</code></pre>
+
+<p>​   </p>
+<p>Ouput dari hasil penerapan  :</p>
+<p><img alt="" src="assets/images/results_example.png" /></p>
+<h2 id="kesimpulan">Kesimpulan<a class="headerlink" href="#kesimpulan" title="Permanent link">&para;</a></h2>
+<p>​   Algoritma kNN (k-Nearest Neighbor) adalah algoritma klasifikasi dengan melihat tetangga terdekat. Penerapan algoritma ini tergolong sederhana. Kita dapat menetapkan label data baru berdasarkan jarak objek baru dengan objek lain (tetangga terdekat).</p>
+<p>Dalam kNN kita perlu menghitung jarak objek baru dengan objek lain (training) untuk menetetangga terdekatnya. Pada umumnya kita menggunakan Euclidean distance.</p>
+<p><img alt="" src="assets/images/ed.png" /></p>
+<p>​   Kita perlu mencari hasil dari faktor k apa yang memiliki akuransi paling tinggi. Setelah menemukan faktor k yang tepat, kita dapat menggunakan faktor k tersebut sebagai model acuan.</p>
+<blockquote>
+<p>**So k-NN be like.. <em>"Show me your friends, and i will tell you who you are."******</em></p>
+</blockquote>
+<h2 id="sumber-dan-referensi">Sumber dan referensi :<a class="headerlink" href="#sumber-dan-referensi" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.saedsayad.com/k_nearest_neighbors.htm">https://www.saedsayad.com/k_nearest_neighbors.htm</a></li>
+<li><a href="https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761">https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761</a></li>
+<li><a href="https://medium.com/bee-solution-partners/cara-kerja-algoritma-k-nearest-neighbor-k-nn-389297de543e">https://medium.com/bee-solution-partners/cara-kerja-algoritma-k-nearest-neighbor-k-nn-389297de543e</a></li>
+<li><a href="https://informatikalogi.com/algoritma-k-nn-k-nearest-neighbor/">https://informatikalogi.com/algoritma-k-nn-k-nearest-neighbor/</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2018/08/k-nearest-neighbor-introduction-regression-python/">https://www.analyticsvidhya.com/blog/2018/08/k-nearest-neighbor-introduction-regression-python/</a></li>
+<li><a href="https://www.kaggle.com/skalskip/iris-data-visualization-and-knn-classification">https://www.kaggle.com/skalskip/iris-data-visualization-and-knn-classification</a></li>
+<li><a href="https://www.kaggle.com/kernels/scriptcontent/1543675/download">https://www.kaggle.com/kernels/scriptcontent/1543675/download</a></li>
+<li>Florin Gorunescu, Data Mining: Concepts, Models and Techniques, Springer, 2011.</li>
+<li>Jiawei Han and Micheline Kamber, Data Mining:Concepts and TechniquesSecond Edition, Elsevier, 2006 Ian H. Witten, Frank Eibe, Mark A. Hall, Data mining: Practical Machine Learning Tools and Techniques3rd Edition, Elsevier, 2011.</li>
+</ul>
+<p>Semoga bermanfaat ;)</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="getting-started/" title="Getting started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Getting started
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2019 Martin Donath
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+    
+      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/squidfunk" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/squidfunk" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/squidfunk" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.8c0d971c.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+  </body>
+</html>
